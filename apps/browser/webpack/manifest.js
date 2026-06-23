@@ -61,7 +61,7 @@ function isPlainObject(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
-const browsers = ["chrome", "edge", "firefox", "opera", "safari"];
+const browsers = ["chrome", "edge", "firefox", "opera", "safari", "vivaldi"];
 
 /**
  * Flatten the browser prefixes in the manifest.

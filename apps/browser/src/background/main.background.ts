@@ -1534,6 +1534,7 @@ export default class MainBackground {
       this.accountService,
       this.logService,
       this.authService,
+      this.platformUtilsService,
       this.taskSchedulerService,
     );
 
@@ -1886,7 +1887,7 @@ export default class MainBackground {
     // Disable the side panel globally on startup so Bitwarden does not appear in
     // Chrome's side panel picker. It is enabled per-tab on demand when the user
     // triggers autofill triage via the context menu.
-    if (BrowserApi.isSidePanelApiSupported) {
+    if (BrowserApi.isSidePanelApiSupported && !this.platformUtilsService.isVivaldi()) {
       await BrowserApi.setSidePanelOptions({ enabled: false });
     }
     this.idleBackground.init();

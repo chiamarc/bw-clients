@@ -4,6 +4,7 @@ import { PinServiceAbstraction } from "@bitwarden/common/key-management/pin/pin.
 import { DefaultProcessReloadService } from "@bitwarden/common/key-management/process-reload";
 import { VaultTimeoutSettingsService } from "@bitwarden/common/key-management/vault-timeout";
 import { LogService } from "@bitwarden/common/platform/abstractions/log.service";
+import { PlatformUtilsService } from "@bitwarden/common/platform/abstractions/platform-utils.service";
 import { MessagingService } from "@bitwarden/common/platform/abstractions/messaging.service";
 
 import { BrowserApi } from "../platform/browser/browser-api";
@@ -22,6 +23,7 @@ export class BrowserProcessReloadService extends DefaultProcessReloadService {
     accountService: AccountService,
     logService: LogService,
     authService: AuthService,
+    private platformUtilsService: PlatformUtilsService,
     private taskSchedulerService: BrowserTaskSchedulerService,
   ) {
     super(
@@ -39,6 +41,10 @@ export class BrowserProcessReloadService extends DefaultProcessReloadService {
     await super.performProcessReload();
 
     await this.taskSchedulerService.clearAllScheduledTasks();
+
+    if (this.platformUtilsService.isVivaldi()) {
+      return;
+    }
 
     // Wait for the popup to actually close, otherwise the reload leaves behind a
     // zombie popup with an invalidated extension context.
