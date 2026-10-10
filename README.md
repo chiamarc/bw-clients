@@ -10,6 +10,17 @@
 
 ---
 
+## Unofficial Vivaldi Community Build
+
+This repository contains an unofficial community-maintained build of the
+Bitwarden browser extension with Vivaldi-specific compatibility changes.
+
+It is based on Bitwarden's open-source client code and is not produced,
+endorsed, sponsored, or supported by Bitwarden, Inc.
+
+For the official Bitwarden browser extension, visit:
+https://bitwarden.com/download/
+
 # Bitwarden Client Applications
 
 This repository houses all Bitwarden client applications except the mobile applications ([iOS](https://github.com/bitwarden/ios) | [android](https://github.com/bitwarden/android)).

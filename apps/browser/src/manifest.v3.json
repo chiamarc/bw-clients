@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
   "minimum_chrome_version": "134.0",
-  "name": "__MSG_extName__",
-  "short_name": "Bitwarden",
+  "name": "Vivaldi Vault Community Build",
+  "short_name": "Vivaldi Vault",
   "version": "2026.9.3",
-  "description": "__MSG_extDesc__",
+  "description": "Unofficial Vivaldi compatibility build based on the Bitwarden open-source browser extension.",
   "default_locale": "en",
-  "author": "Bitwarden Inc.",
-  "homepage_url": "https://bitwarden.com",
+  "author": "Community build based on Bitwarden",
+  "homepage_url": "https://github.com/YOUR-GITHUB-NAME/bitwarden-clients-vivaldi",
   "icons": {
     "16": "images/icon16.png",
     "32": "images/icon32.png",
@@ -43,7 +43,7 @@
       "19": "images/icon19.png",
       "38": "images/icon38.png"
     },
-    "default_title": "Bitwarden",
+    "default_title": "Vivaldi Vault Community Build",
     "default_popup": "popup/index.html"
   },
   "permissions": [
