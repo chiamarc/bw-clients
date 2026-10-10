@@ -7,7 +7,7 @@
   "description": "Unofficial Vivaldi compatibility build based on the Bitwarden open-source browser extension.",
   "default_locale": "en",
   "author": "Community build based on Bitwarden",
-  "homepage_url": "https://github.com/YOUR-GITHUB-NAME/bitwarden-clients-vivaldi",
+  "homepage_url": "https://github.com/chiamarc/bw-clients",
   "icons": {
     "16": "images/icon16.png",
     "32": "images/icon32.png",
