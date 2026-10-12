@@ -8,6 +8,7 @@
   "default_locale": "en",
   "author": "Community build based on Bitwarden",
   "homepage_url": "https://github.com/chiamarc/bw-clients",
+  "__vivaldi__key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApbalKJRRsqkxtSaHWuqijb8owM6nn+Jg+rNI/g7yssSVaq1EuYpb+vUVVjqZU8e0pWnoMegsTYtdJQi0UjOcjfLBC3em4aejTfR2K2W/OZYZoo6q4Ui2zsxzDNBbXzD1g6EoeST8QWJz2Nw85mRxOuK7A600B+8LkVwSppY5hyrj2bcUtBaV1ytu+i29yJSOsqQzXSEfXY5fLMlKctHetycpiyiGUAxbYjLVBGgn/G4Vqq8/6BQ8CBYRmJethuIt4ITO6ZkqnZPoX3HH0Qg3TxV2VxrRzuDcr20xU/lbx6B7/HlybJI+i7eBtjIHh/ZtkEB0gm4W9xhgnDo8sqjvGwIDAQAB",
   "icons": {
     "16": "images/icon16.png",
     "32": "images/icon32.png",
